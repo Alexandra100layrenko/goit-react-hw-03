@@ -6,7 +6,11 @@ const ContactList = ({ contacts, deleteContact }) => {
   return (
     <ul>
       {contacts.map(({ id, name, number }) => (
-      <Contact key={id} name={name} number={number} deleteContact={() => deleteContact(id)} />
+      <Contact 
+        key={id} 
+        name={name} 
+        number={number} 
+        deleteContact={() => deleteContact(id)} />
     ))}
     </ul>
   )
